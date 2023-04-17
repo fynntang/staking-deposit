@@ -1,0 +1,11 @@
+validator_keys
+
+build/
+dist/
+venv/
+
+*.hypothesis
+.DS_Store
+
+.idea
+.vscode
