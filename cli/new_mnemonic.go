@@ -40,7 +40,7 @@ var (
 )
 
 func runNewMnemonicCmd(cmd *cobra.Command, args []string) error {
-	var numValidators uint
+	var numValidators uint64
 	if err := survey.AskOne(numValidatorsPrompt, &numValidators, survey.WithValidator(survey.Required)); err != nil {
 		return err
 	}
